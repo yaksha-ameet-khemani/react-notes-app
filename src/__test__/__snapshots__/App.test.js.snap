@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`boundary AppTest boundary should mount App without crashing 1`] = `
+Array [
+  <React.Fragment>
+    <div>
+      My Notes
+    </div>
+    <BrowserRouter>
+      <div>
+        <Link
+          to="/"
+        >
+          Home
+        </Link>
+        ----
+        <Link
+          to="/notes"
+        >
+          All Notes
+        </Link>
+        ----
+        <Link
+          to="/create-note"
+        >
+          Create Note
+        </Link>
+      </div>
+      <Switch>
+        <Route
+          exact={true}
+          path="/"
+        >
+          <Home />
+        </Route>
+        <Route
+          exact={true}
+          path="/notes"
+        >
+          <Notes />
+        </Route>
+        <Route
+          exact={true}
+          path="/create-note"
+        >
+          <CreateNote />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  </React.Fragment>,
+]
+`;
+
+exports[`boundary AppTest boundary should mount CreateNote without crashing 1`] = `
+Array [
+  <div>
+    Create note
+    <form>
+      <label>
+        Title
+      </label>
+      <input
+        name="title"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <br />
+      <label>
+        Description
+      </label>
+      <input
+        name="description"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <br />
+      <label>
+        Author
+      </label>
+      <input
+        name="author"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <br />
+      <label>
+        Status
+      </label>
+      <input
+        checked={false}
+        name="status"
+        onChange={[Function]}
+        type="checkbox"
+        value={false}
+      />
+      <br />
+      <button
+        onClick={[Function]}
+      >
+        Submit
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+    </form>
+  </div>,
+]
+`;
+
+exports[`boundary AppTest boundary should mount Notes without crashing 1`] = `
+Array [
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Create Note
+    </button>
+    <input
+      onChange={[Function]}
+      type="text"
+    />
+    <div>
+      All Notes
+    </div>
+    <Loading />
+  </div>,
+]
+`;
